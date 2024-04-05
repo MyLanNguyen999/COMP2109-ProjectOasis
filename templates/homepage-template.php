@@ -42,6 +42,11 @@ get_header();
     <section class="home-row-three row">
       <?php echo wp_kses_post(get_field('row_three_content')); ?>
     </section> -->
+
+    <!-- //* add featured products -->
+    <?php 
+    echo ('<h1 style="text-align:center; font-size:40px; background-color:#124D4B; color: white;">Featured Products</h1>');
+    echo do_shortcode('[featured_products per_page="4" columns="4"]'); ?>
 </main>
 <?php
 get_footer();
