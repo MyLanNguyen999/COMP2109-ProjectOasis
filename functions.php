@@ -1,5 +1,5 @@
 <?php
-//* Adding the menu function to my custom theme (part of assignment one)
+//* Adding the menu function to my custom theme 
 function custom_theme_setup() {
   register_nav_menus( array(
     'header' => 'Header menu',
@@ -8,7 +8,7 @@ function custom_theme_setup() {
 }
 add_action( 'after_setup_theme', 'custom_theme_setup' );
 
-//* Add Featured image support to our posts (part of assignment one)
+//* Add Featured image support to our posts
 add_theme_support( 'post-thumbnails' );
 
 //* set up our custom footer widgets 
@@ -70,7 +70,8 @@ add_action('init', 'book_init');
 function book_shortcode(){
   $query = new WP_Query(array('post_type' => 'book', 'post_per_page' => 8, 'order' => 'asc'));
   while ($query -> have_posts()) : $query-> the_post(); ?>
-    <div class="col-sm-12 col-md-6 col-lg-4">
+  <section class="custom-post-section">
+    <div class="col-sm-12 col-md-6 col-lg-4 custom-post">
       <div class="image-container">
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
       </div>
@@ -80,6 +81,7 @@ function book_shortcode(){
         <p><a href="<?php the_permalink(); ?>">Learn More</a></p>
       </div>
     </div>
+  </section>
     <?php wp_reset_postdata(); ?>
   <?php
   endwhile;

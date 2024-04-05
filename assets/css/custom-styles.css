@@ -1,6 +1,5 @@
 * {
     font-family: 'Lato', sans-serif;
-    background-color: #124D4B;
 }
 html {
     scroll-behavior: smooth;
@@ -200,15 +199,15 @@ header .menu li a,
 
 /** Homepage **/
 
-/* .overlay {
+.overlay {
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
     color: white;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
     font-size: 100px;
-} */
+}
 .home-row-one {
     padding: 5% 5% 5% 10%;
     clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 48%, 0% 48%);
@@ -269,7 +268,7 @@ header .menu li a,
 }
 
 .single-post-row-one {
-    padding: 5% 0% 5% 5%;
+    padding: 2% 2%;
     background-color: #f8f8f8;
 }
 
@@ -418,7 +417,7 @@ button,
 .general-masthead {
     padding-top: 5%;
     padding-bottom: 5%;
-    background-image: url('http: //oasis.local/wp-content/uploads/2024/04/screenshot-1.png');
+    background-image: url('http://oasis.local/wp-content/uploads/2024/03/screenshot.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -445,4 +444,25 @@ footer,
 }
 .woocommerce-loop-product__title {
     color:#124D4B;
+}
+
+/* custom posts */
+.custom-post-section{
+    
+    display: inline-flex;
+    align-items: stretch;
+   width: 30%;
+   text-align: center;
+   padding: 10px 10px;
+   margin: 5px 5px;
+  
+}
+.image-container img {
+    width: 400px;
+    height: 400px;
+}
+.custom-post {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
 }
