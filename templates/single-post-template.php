@@ -12,7 +12,7 @@ $backgroundImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), '
         <h1> <?php the_title(); ?> </h1>
     </div>
 </section>
-
+<main>
 <section class="row">
   <div class="post-content">
     <p><?php echo get_the_content(); ?></p>
@@ -39,9 +39,9 @@ $backgroundImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), '
         <a href="<?php the_permalink() ?>" class="post-title">
             <h3><?php the_title(); ?></h3>
         </a>
-        <p>
+        
         <?php the_excerpt(__('(more…)')); ?>
-        </p>
+        
     </article>
       <?php
         endwhile;
@@ -49,4 +49,5 @@ $backgroundImg = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), '
       ?>
   </div>
 </section>
+    </main>
 <?php get_footer(); ?>
