@@ -466,3 +466,16 @@ footer,
     align-items: stretch;
     flex-direction: column;
 }
+
+/* single post */
+.post-tab {
+    background-size: cover !important;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 70px;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+    text-shadow: 2px 2px 4px #f8f8f8;
+}
